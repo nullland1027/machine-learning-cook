@@ -2,13 +2,13 @@
 # coding=utf-8
 
 import os
-import argparse
+import sys
 
-# parser = argparse.ArgumentParser(description='Your commit -m')
-# parser.add_argument('e')
-# m = str(parser.parse_args())
+m = sys.argv[1]
+
 origin = 'origin'
 branch = 'main'
 os.system('git add .; git status')
-os.system('git commit -m ' + 'test')
+os.system('git commit -m ' + m)
 os.system('git push ' + origin + ' ' + branch)
+
