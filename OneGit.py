@@ -11,4 +11,3 @@ branch = 'main'
 os.system('git add .; git status')
 os.system('git commit -m ' + m)
 os.system('git push ' + origin + ' ' + branch)
-
